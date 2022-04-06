@@ -8,12 +8,7 @@ import { NewTran } from "./components/newTransaction/NewTran";
 
 function App() {
 
-  const [allValue, setAllValue] = useState([
-    { id: 1, text: "Cricket", amount: -100 },
-    { id: 2, text: "Job", amount: 300 },
-    { id: 3, text: "Selling Books", amount: 130 },
-    { id: 4, text: "Shopping", amount: -230 },
-  ])
+  const [allValue, setAllValue] = useState([])
 
   const handleOnDelete=(index)=>{
     setAllValue(allValue.filter((value)=>value.id !== index))
